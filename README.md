@@ -22,6 +22,7 @@ python main.py
 ## UI Preview
 
 ![UI](assets/Screenshot 2026-05-19 132314)
+<img src="assets/Screenshot 2026-05-19 132314.png" width="700"/>
 
 ## Gesture Detection
 
