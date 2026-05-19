@@ -23,6 +23,12 @@ Built using Python, OpenCV, MediaPipe, and CustomTkinter, this project combines 
 
 # 🖼️ Demo
 
+<h2>Main UI</h2>
+
+<p align="center">
+  <img src="screenshots/Screenshot 2026-05-19 132314" width="800"/>
+</p>
+
 ## Main UI
 assets/Screenshot 2026-05-19 132314.png
 
