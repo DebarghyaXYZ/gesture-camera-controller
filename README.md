@@ -24,7 +24,7 @@ Built using Python, OpenCV, MediaPipe, and CustomTkinter, this project combines 
 # 🖼️ Demo
 
 ## Main UI
-![Main UI](assets/Screenshot 2026-05-19 132314.png)
+assets/Screenshot 2026-05-19 132314.png
 
 ## Capture Mode
 ![Main UI](assets/Screenshot 2026-05-19 132341.png)
