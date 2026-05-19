@@ -110,9 +110,9 @@ cap.set(4, hCam)
 
 # =========================
 # SAVE DIRECTORY
-DATASAVE_DIR = r"H:\PyCharm Python\Tracking Projects\Hand Tracking\Essential Data"
-SAVE_DIR = r"H:\PyCharm Python\Tracking Projects\Hand Tracking\Captured Image"
-COUNTER_FILE = os.path.join(DATASAVE_DIR, "Image Number.txt")
+DATASAVE_DIR = r"H:\PyCharm Python\Tracking Projects\Hand Tracking\Essential Data" #add the directroy of a data folder
+SAVE_DIR = r"H:\PyCharm Python\Tracking Projects\Hand Tracking\Captured Image" #folder were the images should store
+COUNTER_FILE = os.path.join(DATASAVE_DIR, "Image Number.txt") #a .text file where store the previous img save number
 # =========================
 
 # =========================
