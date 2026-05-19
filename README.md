@@ -24,17 +24,19 @@ Built using Python, OpenCV, MediaPipe, and CustomTkinter, this project combines 
 # 🖼️ Demo
 
 ## Main UI
-(Add Screenshot Here)
-
-## Zoom Mode
-(Add Screenshot Here)
+![Main UI](assets/Screenshot 2026-05-19 132314.png)
 
 ## Capture Mode
-(Add Screenshot Here)
+![Main UI](assets/Screenshot 2026-05-19 132341.png)
+
+## Zoom Mode
+![Main UI](assets/Screenshot 2026-05-19 132425.png)
 
 ## Pro Mode
-(Add Screenshot Here)
+![Main UI](assets/Screenshot 2026-05-19 132502.png)
 
+## Return From Pro Mode
+![Main UI](assets/Screenshot 2026-05-19 132548.png)
 ---
 
 # 🧠 How It Works
