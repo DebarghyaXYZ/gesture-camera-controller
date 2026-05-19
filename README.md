@@ -21,30 +21,6 @@ Built using Python, OpenCV, MediaPipe, and CustomTkinter, this project combines 
 
 ---
 
-# 🖼️ Demo
-
-<h2>Main UI</h2>
-
-<p align="center">
-  <img src="screenshots/main-ui.png" width="800"/>
-</p>
-
-## Main UI
-assets/Screenshot 2026-05-19 132314.png
-
-## Capture Mode
-![Main UI](assets/Screenshot 2026-05-19 132341.png)
-
-## Zoom Mode
-![Main UI](assets/Screenshot 2026-05-19 132425.png)
-
-## Pro Mode
-![Main UI](assets/Screenshot 2026-05-19 132502.png)
-
-## Return From Pro Mode
-![Main UI](assets/Screenshot 2026-05-19 132548.png)
----
-
 # 🧠 How It Works
 
 The system detects hand landmarks using MediaPipe and processes different finger patterns to trigger camera actions.
