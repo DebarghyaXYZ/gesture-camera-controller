@@ -110,9 +110,9 @@ cap.set(4, hCam)
 
 # =========================
 # SAVE DIRECTORY
-DATASAVE_DIR = r"H:\PyCharm Python\Tracking Projects\Hand Tracking\Essential Data" #add the directroy of a data folder
-SAVE_DIR = r"H:\PyCharm Python\Tracking Projects\Hand Tracking\Captured Image" #folder were the images should store
-COUNTER_FILE = os.path.join(DATASAVE_DIR, "Image Number.txt") #a .text file where store the previous img save number
+DATASAVE_DIR = r"H:\PyCharm Python\Tracking Projects\Hand Tracking\Essential Data"
+SAVE_DIR = r"H:\PyCharm Python\Tracking Projects\Hand Tracking\Captured Image"
+COUNTER_FILE = os.path.join(DATASAVE_DIR, "Image Number.txt")
 # =========================
 
 # =========================
@@ -134,6 +134,7 @@ zoomMode=False
 
 detector = htm.handDetector() # call module
 
+
 # =========================
 # VARIABLE
 stage = 0
@@ -151,7 +152,6 @@ proMode = False
 
 # =========================
 # FILE FUNCTIONS
-# =========================
 
 def load_image_number():
     os.makedirs(DATASAVE_DIR, exist_ok=True)
@@ -202,12 +202,14 @@ def draw_center_text(img, text, y, scale=2, color=(0,0,255), thickness=4):
 
     cv2.putText(img, text, (x,y), font, scale, (0,0,0), thickness+3)
     cv2.putText(img, text, (x,y), font, scale, color, thickness)
+# =========================
+
+
 
 # =========================
 # MAIN LOOP
-# =========================
-imgsave = load_image_number()
 
+imgsave = load_image_number()
 while running:
     success, frame = cap.read()
     frame = cv2.flip(frame, 1)
@@ -233,6 +235,8 @@ while running:
         elif handType == 0:
             lmListLeft = hand
 
+
+    #ALL HAND POSES
     rightFingers = get_fingers(lmListRight)
     leftFingers = get_fingers(lmListLeft)
 
@@ -251,12 +255,10 @@ while running:
 
     # =========================
     # ZOOM GESTURE
-    # =========================
 
     h, w = img.shape[:2]
 
     # SMOOTH ZOOM TRANSITION
-
     currentZoom += (targetZoom - currentZoom) * zoomSpeed
 
     # Prevent invalid zoom
@@ -264,7 +266,6 @@ while running:
 
 
     # CROP CALCULATION
-
     new_w = int(w / currentZoom)
     new_h = int(h / currentZoom)
 
@@ -316,12 +317,12 @@ while running:
         leftHandClosed  = True
     else:
         leftHandClosed = leftFingers == [0, 0, 0, 0, 0]
+    # =========================
 
 
     # =========================
     # CAPTURE GESTURE
-    # =========================
-
+    
     if imgTookByButton:
         countdownStartTime = now
         imgTookByButton = False
@@ -373,7 +374,7 @@ while running:
                 countdownActive = True
                 capturing = True
                 countdownStartTime = now
-
+    # =========================
 
 
 
@@ -424,7 +425,7 @@ while running:
     cv2.moveWindow("Camera", 100, 100)
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
-
+# =========================
 
 cap.release()
 cv2.destroyAllWindows()
